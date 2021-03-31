@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         }
         
     @objc func updateUI(){
-            if questionNumber + 1 < questionBank.count {
+        
           
                 questions.text = questionBank[questionNumber][0]
             
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
                 falseButton.backgroundColor = UIColor.clear
             
                 
-            }
+            
             
         }
 
@@ -66,7 +66,6 @@ class ViewController: UIViewController {
             
             Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(updateUI), userInfo: nil, repeats: true)
             
-            updateUI()
             
             
             
